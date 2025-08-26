@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 15 15 18;
+  --card: 24 24 28;
+  --muted: 160 160 175;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  @apply bg-neutral-950 text-neutral-100;
+}
+
+.container-max {
+  @apply container max-w-7xl m-auto;
+}
+.card {
+  @apply rounded-2xl bg-neutral-900/70 backdrop-blur shadow-xl border border-white/5;
+}
+.badge {
+  @apply px-2 py-0.5 rounded-full text-xs bg-white/10;
+}
+
+/* === Headings === */
+h1 {
+  @apply text-3xl font-bold;
+}
+h2 {
+  @apply text-2xl font-semibold;
+}
+h3 {
+  @apply text-xl font-medium;
+}
+
+p {
+  @apply text-sm text-neutral-400;
+}
